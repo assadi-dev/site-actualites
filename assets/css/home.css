@@ -70,3 +70,19 @@
     position: absolute;
     bottom: 0;
 }
+
+.carousel-article-image {
+    width: 100%;
+    height: 580px;
+    object-fit: cover;
+    transition: all 0.35s ease;
+    -webkit-transition: all 0.35s ease;
+    -moz-transition: all 0.35s ease;
+    -ms-transition: all 0.35s ease;
+    -o-transition: all 0.35s ease;
+}
+
+.carousel-article-image:hover {
+    filter: brightness(0.8);
+    -webkit-filter: brightness(0.8);
+}

@@ -43,6 +43,7 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
+    margin-bottom: 2.5rem;
 }
 
 .continues-title {
@@ -79,8 +80,13 @@ footer {
 
 .navigation {
     border-top: 10px solid #2DB3D0;
-    margin-top: 1.2rem;
-    margin-bottom: 1.2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.news-continues {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .section-article {
@@ -198,4 +204,24 @@ footer .row {
     outline: none !important;
     background-color: transparent;
     border: none;
+}
+
+.article {
+    position: relative;
+}
+
+.article-carousel-description {
+    width: 100%;
+    height: 25%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+.article-carousel-description {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
 }

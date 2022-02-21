@@ -31,17 +31,64 @@
                     <i class="fa-regular fa-user"></i>
                 </div>
             </div>
-            <div class="news-continues my-3"><span class="continues-title bg-danger">EN CONTINUE</span> <span class="text-danger">15h15</span> Lorem ipsum dolor sit amet
+            <div class="news-continues "><span class="continues-title bg-danger">EN CONTINUE</span> <span class="text-danger">15h15</span> Lorem ipsum dolor sit amet
             </div>
         </header>
 
         <div class="popular-article-wrapper">
             <div class="left">
-                <div class="article">1</div>
+                <div id="articleCarousel" class="carousel slide article" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner article-preview-slider">
+                        <div class="carousel-item active">
+                            <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AAU7qiy.img?h=840&w=1119&m=6&q=60&o=f&l=f&x=494&y=306" class="carousel-article-image" alt="Fabien Roussel">
+                            <div class="article-carousel-description text-white">
+                                <p>Accusation d'emploi fictif: Roussel affirme avoir "les documents" prouvant son travail
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item position-relative">
+                            <a href="./pages/article.html">
+                                <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AAU7hzx.img?h=839&w=1119&m=6&q=60&o=f&l=f" class="carousel-article-image" alt="salle de class">
+                                <div class="article-carousel-description text-white">
+                                    <p>Quelle utilité d’enseigner l’anglais au primaire?</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AAU6YPW.img?h=746&w=1119&m=6&q=60&o=f&l=f&x=573&y=279" class="carousel-article-image" alt="...">
+                            <div class="article-carousel-description text-white">
+                                <p>JO 2022: la belle somme d'argent pour les médaillés français, avec un joli pactole pour Fillon Maillet</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#articleCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#articleCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
             </div>
 
             <div class="right">
-                <div class="article">2</div>
+                <div class="article ">
+                    <a href="#">
+                        <img src="..." alt="">
+                        <div class="header-article-description text-white">
+                            <p>Mali : pourquoi le bilan de la guerre menée par la France contre le terrorisme au Sahel est si critiqué</p>
+                        </div>
+
+                    </a>
+
+                </div>
                 <div class="sub-article">
                     <div class="article">3</div>
                     <div class="article">4</div>
@@ -50,14 +97,26 @@
             </div>
 
         </div>
-        <nav class="my-3 bg-dark navigation ">
+        <nav class="bg-dark navigation ">
             <ul>
-                <li><a class=" text-white text-decoration-none" href="#">Actualité</a></li>
-                <li><a class=" text-white text-decoration-none" href="#">National</a></li>
-                <li><a class=" text-white text-decoration-none" href="#">Mondial</a></li>
-                <li><a class=" text-white text-decoration-none" href="#">Politique</a></li>
-                <li><a class=" text-white text-decoration-none" href="#">Culture</a></li>
-                <li><a class=" text-white text-decoration-none" href="#">Sport</a></li>
+                <a class=" text-white text-decoration-none" href="/">
+                    <li>Actualité</li>
+                </a>
+                <a class=" text-white text-decoration-none" href="#">
+                    <li>National</li>
+                </a>
+                <a class=" text-white text-decoration-none" href="#">
+                    <li>Mondial</li>
+                </a>
+                <a class=" text-white text-decoration-none" href="#">
+                    <li>Politique</li>
+                </a>
+                <a class=" text-white text-decoration-none" href="#">
+                    <li>Culture</li>
+                </a>
+                <a class=" text-white text-decoration-none" href="/pages/sport.html">
+                    <li>Sport</li>
+                </a>
             </ul>
         </nav>
         <main class="main-content">
@@ -102,7 +161,7 @@
 
                 <h2 class="title-article orange-underline">Culture</h2>
                 <div class="row-article">
-                    <article class="articl-card"></article>
+                    <article class="articl-card"><a href="/pages/article.html">article 1</a></article>
                     <article class="articl-card"></article>
                     <article class="articl-card"></article>
                     <article class="articl-card"></article>
@@ -136,16 +195,18 @@
                 <div><a href="#">Politique</a></div>
                 <div><a href="#">Santé & Bien être</a></div>
                 <div><a href="#">Culture</a></div>
-                <div><a href="#">Sport</a></div>
+                <div><a href="/pages/sport.html">Sport</a></div>
                 <div><a href="#">Vidéo</a></div>
 
             </div>
             <div class="footer-social">
                 <div class="footer-social-contents">
                     <span>SUIVEZ-NOUS</span>
-                    <a href="#"> <i class="fa-brands fa-facebook-f "></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter mx-2"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://fr-fr.facebook.com/" rel="noopener noreferrer"> <i class="fa-brands fa-facebook-f "></i></a>
+                    <a href="https://twitter.com/" rel="noopener noreferrer"><i
+                            class="fa-brands fa-twitter mx-2"></i></a>
+                    <a href="https://www.youtube.com/" rel="noopener noreferrer"><i
+                            class="fa-brands fa-youtube"></i></a>
 
                 </div>
                 <div class="mail-subscription">
