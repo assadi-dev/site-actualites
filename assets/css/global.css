@@ -47,9 +47,7 @@ footer {
 }
 
 .continues-title {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-right: 0.5rem;
+    padding: 0.5rem;
     color: #fff;
     font-weight: 500;
     margin-right: 50px;
@@ -87,6 +85,10 @@ footer {
 .news-continues {
     margin-top: 3rem;
     margin-bottom: 3rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
 }
 
 .section-article {
@@ -126,7 +128,8 @@ footer {
     font-weight: bold;
 }
 
-.articl-card-image {
+.articl-card-image,
+.articl-card-video {
     width: 100%;
     max-height: 235px;
     object-fit: cover;
