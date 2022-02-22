@@ -268,11 +268,12 @@ footer .row {
         grid-row-gap: 1rem;
         justify-content: center;
         text-align: center;
+        min-height: 200px;
     }
     .continues-title {
         margin: 0 auto;
     }
-    .article-carousel-description {
-        position: relative;
+    .article-carousel-description p {
+        font-size: 1rem;
     }
 }

@@ -126,20 +126,16 @@
 @media screen and (max-width: 550px) {
     .popular-article-wrapper {
         grid-template-columns: 1fr;
-        grid-template-rows: 450px 1fr;
+        grid-gap: 0.75rem;
     }
     .left .article {
         height: auto;
         background-color: #fff;
-        height: 330px;
     }
     .carousel-article-image {
-        object-fit: contain;
+        object-fit: cover;
         background-color: #fff;
-        height: auto;
-    }
-    .article-carousel-description {
-        background-color: #444;
+        height: 330px;
     }
     .header-article-image {
         height: 235px;
