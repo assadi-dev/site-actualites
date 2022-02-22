@@ -276,4 +276,7 @@ footer .row {
     .article-carousel-description p {
         font-size: 1rem;
     }
+    #news-continues-carousel {
+        min-height: 80px;
+    }
 }
