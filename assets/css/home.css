@@ -122,3 +122,34 @@
 .header-article-image:first-of-type {
     height: 330px;
 }
+
+@media screen and (max-width: 550px) {
+    .popular-article-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: 450px 1fr;
+    }
+    .left .article {
+        height: auto;
+        background-color: #fff;
+        height: 330px;
+    }
+    .carousel-article-image {
+        object-fit: contain;
+        background-color: #fff;
+        height: auto;
+    }
+    .article-carousel-description {
+        background-color: #444;
+    }
+    .header-article-image {
+        height: 235px;
+    }
+    .sub-article {
+        grid-area: b;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: end;
+        grid-gap: 0.75rem;
+    }
+}

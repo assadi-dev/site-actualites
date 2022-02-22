@@ -257,3 +257,22 @@ footer .row {
     font-weight: bold;
     text-shadow: 0 0 3px rgba(0, 0, 0, 1);
 }
+
+@media screen and (max-width: 550px) {
+    .navigation {
+        display: none;
+    }
+    .news-continues {
+        grid-template-columns: 1fr;
+        grid-template-rows: 120px 1fr;
+        grid-row-gap: 1rem;
+        justify-content: center;
+        text-align: center;
+    }
+    .continues-title {
+        margin: 0 auto;
+    }
+    .article-carousel-description {
+        position: relative;
+    }
+}
